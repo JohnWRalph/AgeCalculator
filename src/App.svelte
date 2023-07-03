@@ -30,7 +30,7 @@
       alert("Please enter a valid date");
       return;
     }
-    //if birth year the same as current year and month is greater than current 
+    //if birth year the same as current year and month is greater than current
     // month or equal to current month and day is greater than current day
     if (
       birthYear === todayYear &&
@@ -42,11 +42,7 @@
     }
     //if birth year the same as current year and month is greater than current
     //month
-    if (
-      birthYear === todayYear &&
-      birthMonth > todayMonth +1
-      
-    ) {
+    if (birthYear === todayYear && birthMonth > todayMonth + 1) {
       alert("Please enter a valid date");
       return;
     }
@@ -223,60 +219,7 @@
         console.log(dayDifference);
         days.set(dayDifference);
       }
-
-        
     }
-
-    // //get difference in days
-    // let daysDifference = Math.floor(
-    //   (today.getTime() - birthDate.getTime()) / (1000 * 60 * 60 * 24)
-    // );
-    // console.log(daysDifference);
-
-    // //get age in years, months and days
-    // let yearValue = Math.floor(daysDifference / 365);
-    // console.log(yearValue)
-
-    // let monthValue = Math.floor((daysDifference % 365) / 30);
-    // let dayValue = Math.floor((daysDifference % 365) % 30);
-
-    // years.set(yearValue);
-    // months.set(monthValue);
-    // days.set(dayValue);
-
-    // while (daysDifference !== 0) {
-    //   if (daysDifference === 0) {
-    //     console.log("same date");
-    //   } else if (daysDifference > 0) {
-    //     console.log("before date");
-    //     if (birthDay < daysInMonth[birthMonth - 1]) {
-    //       birthDay++;
-
-    //     } else if (birthMonth < 12) {
-    //       birthDay = 1;
-    //       birthMonth++;
-
-    //     } else {
-    //       birthDay = 1;
-    //       birthMonth = 1;
-    //       birthYear++;
-
-    //     }
-
-    //     //convert days difference to age
-
-    //     birthDate = new Date(birthYear, birthMonth - 1, birthDay);
-
-    //     daysDifference = Math.floor(
-    //       (today.getTime() - birthDate.getTime()) / (1000 * 60 * 60 * 24)
-    //     );
-    //     if (daysDifference === 0) {
-    //       console.log("same date");
-    //     }
-    //   } else {
-    //     console.log("after date");
-    //   }
-    // }
   }
 </script>
 
@@ -326,7 +269,7 @@
       on:click={() => calculate(birthYear, birthMonth, birthDay)}
       class="round-button btn btn-round"
     >
-      <img src="src/assets/images/icon-arrow.svg" alt="arrow" />
+      <img src="/icon-arrow.svg" alt="arrow" />
     </button>
 
     <div id="bottom">
