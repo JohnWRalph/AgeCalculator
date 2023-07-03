@@ -311,6 +311,8 @@
   @tailwind base;
   @tailwind components;
   @tailwind utilities;
+  
+  
   .card {
     background-color: #fff;
     border-radius: 2px;
@@ -453,9 +455,34 @@
     top: 125px;
     right: 50px;
     z-index: 10;
+    -webkit-backface-visibility: hidden;
   }
 
   .divider {
     width: 90%;
+  }
+  @media screen and (max-width: 400px) {
+    .card {
+      width: 350px;
+    }
+   .input {
+    width:90%;
+    font-size: 16px;
+   }
+   #bottomText {
+     font-size: 48px;
+   }
+   .round-button{
+    /* display:none; */
+    transition: transform 3s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    right:50%;
+    -webkit-transform: translateX(50%);
+    
+    
+   }
+   .divider{
+      width:100%;
+   }
   }
 </style>
